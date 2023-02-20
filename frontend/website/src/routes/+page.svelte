@@ -24,10 +24,69 @@
 				<p>
 					Have you ever thought of making your own streaming platform? No?
 					<br/>
-					Well... We are making a streaming platform. An open-source streaming platform.
+					Well... We are making a streaming platform. An <span class="highlight">open-source</span> streaming platform.
 					<br/>
 					You can join us on our journey of world conquer... It will be fun... Probably.
 				</p>
+			</div>
+			<div class="section center">
+				<h1>So... how do we conquer the world?</h1>
+				<div class="bar-container">
+					<div class="rust-bar flex-text">
+						<p>90% Rust</p>
+						<!-- todo: make it so that 10% magic shows above the magic bar and not contained into the rust bar -->
+						<p>10% Magic</p>
+					</div>
+					<div class="magic-bar"></div>
+				</div>
+				<p>With the power of <span class="highlight">Rust</span>.. and <span class="highlight">Magic</span>, of course.</p>
+			</div>
+			<div class="section">
+				<h2>Rust? Like the game?</h2>
+				<p>
+					No. Not the game, we’re talking ‘bout the programming language.
+					<br/>
+					If you’re a programmer you must have heard of it before.
+					<br/>
+					Fast and safe. That’s all you need to know about Rust.
+					<br/>
+					Did we mention it’s fast? <span class="blazing-fast-text">Blazingly Fast&trade;.</span>
+				</p>
+			</div>
+			<div class="section center">
+				<h1>So... What makes it community driven?</h1>
+				<p>
+					Open source. Made by a community of people who actually care about their work.
+					<br/>
+					We plan on having everything be as transparent as possible.
+					<br/>
+					Transparent moderation, development.
+					<br/>
+					That’s what it’s all about.
+				</p>
+			</div>
+			<div class="section center">
+				<h1>Aren’t streaming platforms super expensive?</h1>
+				<p>
+					Yes, they are... 
+					<br/>
+					Our biggest goal and challenge is making everything cost effective and self sustainable.
+				</p>
+			</div>
+			<div class="section">
+				<h2>Alright, you convinced me. Where can i join in on the fun?</h2>
+				<p>
+					You can join our Discord, and check out the source code on GitHub.
+				</p>
+
+			</div>
+			<div class="buttons-container center bottom">
+				<a href="https://github.com/scuffletv" target="_blank" rel="noopener noreferrer">
+					<button class="github-button">GitHub</button>
+				</a>
+				<a href="https://discord.gg/CVyX3WerGr" target="_blank" rel="noopener noreferrer">
+					<button class="discord-button">Discord</button>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -35,8 +94,83 @@
 
 <style lang="scss">
 	.body {
-		max-width: 40rem;
+		max-width: 45rem;
 		margin: 0 auto;
+	}
+
+	button {
+		border: none;
+		border-radius: 0.5rem;
+		padding: 1rem 3rem;
+		font-size: 1.2rem;
+		font-weight: 600;
+		cursor: pointer;
+		transition: background 0.2s ease-in-out;
+	}
+
+	.discord-button {
+		background: #5865F2;
+		color: white;
+	}
+
+	.discord-button:hover {
+		background: #7289DA;
+	}
+
+	.github-button {
+		background: #292929;
+		color: white;
+	}
+
+	.github-button:hover {
+		background: #3F3F3F;
+	}
+
+	.buttons-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.bottom {
+		margin-bottom: 25rem;
+	}
+
+	.flex-text {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	.flex-text > p {
+		color: black;
+	}
+
+	.bar-container {
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 70%;
+	}
+
+	.rust-bar {
+		width: 90%;
+		height: 3rem;
+		background: #DEA584;
+		border-radius: 0.5rem 0 0 0.5rem;
+		text-align: left;
+		padding-left: 1rem;
+	}
+
+	.magic-bar {
+		width: 10%;
+		height: 3rem;
+		background: linear-gradient(to bottom right, #6FCBFF, #fff, #FF72F9);
+		border-radius: 0 0.5rem 0.5rem 0;
 	}
 
 	.section {
@@ -47,7 +181,11 @@
 		align-items: flex-start;
 		justify-content: start;
 	}
-
+	.center {
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
 	.highlight {
 		color: white;
 		font-weight: bold;
@@ -68,6 +206,16 @@
 		font-weight: 100;
 	}
 	
+	.blazing-fast-text {
+		font-weight: 800;
+		color: #FFE145;
+		background: linear-gradient(#FFE145, #FF0000);
+		background-clip: text;
+		-webkit-linear-gradient: (#FFE145, #FF0000);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
 	.wordmark {
 		font-family: "Comfortaa", sans-serif;
 		font-weight: 700;
@@ -81,8 +229,7 @@
 	}
 
 	body {
-		height: 100vh;
-		// background-image: linear-gradient(to bottom, #000000, #1a1a1a);
+		height: 100%;
 		background-image: linear-gradient(to bottom ,#0F1314, #0F1314);
 		background-repeat: no-repeat;
 		background-size: cover;
