@@ -34,8 +34,7 @@
 				<div class="bar-container">
 					<div class="rust-bar flex-text">
 						<p>90% Rust</p>
-						<!-- todo: make it so that 10% magic shows above the magic bar and not contained into the rust bar -->
-						<p>10% Magic</p>
+						<p class="magic-text">10% Magic</p>
 					</div>
 					<div class="magic-bar"></div>
 				</div>
@@ -131,7 +130,8 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		gap: 1rem;
+		gap: 0.5rem;
+		margin-top: 2rem;
 	}
 
 	.bottom {
@@ -157,6 +157,11 @@
 		width: 70%;
 	}
 
+	.magic-text {
+		// move it to the right
+		transform: translateX(2rem);
+	}
+
 	.rust-bar {
 		width: 90%;
 		height: 3rem;
@@ -174,7 +179,7 @@
 	}
 
 	.section {
-		margin-top: 2rem;
+		margin-top: 7rem;
 		display: flex;
 		flex-direction: column;
 		text-align: left;
@@ -227,13 +232,13 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
-
-	body {
+    body {
 		height: 100%;
-		background-image: linear-gradient(to bottom ,#0F1314, #0F1314);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
+		// background-image: linear-gradient(to bottom ,#0F1314, #0F1314);
+		// background-repeat: no-repeat;
+		// background-size: cover;
+		// background-position: center;
+		background-color: #0F1314;
 		color: white;
 		font-family: "Be Vietnam Pro", sans-serif;
 	}
