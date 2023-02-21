@@ -14,8 +14,8 @@
 			<div class="container header">
 				<h1 class="wordmark">Scuffle.tv</h1>
 				<p class="heading-description">
-					We’re building a streaming platform. 
-					<br/>
+					We’re building a streaming platform.
+					<br />
 					A <span class="highlight">community driven streaming platform</span>, that is.
 				</p>
 			</div>
@@ -23,9 +23,10 @@
 				<h2>For Fun&trade;</h2>
 				<p>
 					Have you ever thought of making your own streaming platform? No?
-					<br/>
-					Well... We are making a streaming platform. An <span class="highlight">open-source</span> streaming platform.
-					<br/>
+					<br />
+					Well... We are making a streaming platform. An <span class="highlight">open-source</span>
+					streaming platform.
+					<br />
 					You can join us on our journey of world conquer... It will be fun... Probably.
 				</p>
 			</div>
@@ -36,19 +37,22 @@
 						<p>90% Rust</p>
 						<p class="magic-text">10% Magic</p>
 					</div>
-					<div class="magic-bar"></div>
+					<div class="magic-bar" />
 				</div>
-				<p>With the power of <span class="highlight">Rust</span>.. and <span class="highlight">Magic</span>, of course.</p>
+				<p>
+					With the power of <span class="highlight">Rust</span>.. and
+					<span class="highlight">Magic</span>, of course.
+				</p>
 			</div>
 			<div class="section">
 				<h2>Rust? Like the game?</h2>
 				<p>
 					No. Not the game, we’re talking ‘bout the programming language.
-					<br/>
+					<br />
 					If you’re a programmer you must have heard of it before.
-					<br/>
+					<br />
 					Fast and safe. That’s all you need to know about Rust.
-					<br/>
+					<br />
 					Did we mention it’s fast? <span class="blazing-fast-text">Blazingly Fast&trade;.</span>
 				</p>
 			</div>
@@ -56,28 +60,25 @@
 				<h1>So... What makes it community driven?</h1>
 				<p>
 					Open source. Made by a community of people who actually care about their work.
-					<br/>
+					<br />
 					We plan on having everything be as transparent as possible.
-					<br/>
+					<br />
 					Transparent moderation, development.
-					<br/>
+					<br />
 					That’s what it’s all about.
 				</p>
 			</div>
 			<div class="section center">
 				<h1>Aren’t streaming platforms super expensive?</h1>
 				<p>
-					Yes, they are... 
-					<br/>
+					Yes, they are...
+					<br />
 					Our biggest goal and challenge is making everything cost effective and self sustainable.
 				</p>
 			</div>
 			<div class="section">
 				<h2>Alright, you convinced me. Where can i join in on the fun?</h2>
-				<p>
-					You can join our Discord, and check out the source code on GitHub.
-				</p>
-
+				<p>You can join our Discord, and check out the source code on GitHub.</p>
 			</div>
 			<div class="buttons-container center bottom">
 				<a href="https://github.com/scuffletv" target="_blank" rel="noopener noreferrer">
@@ -108,12 +109,12 @@
 	}
 
 	.discord-button {
-		background: #5865F2;
+		background: #5865f2;
 		color: white;
 	}
 
 	.discord-button:hover {
-		background: #7289DA;
+		background: #7289da;
 	}
 
 	.github-button {
@@ -122,7 +123,7 @@
 	}
 
 	.github-button:hover {
-		background: #3F3F3F;
+		background: #3f3f3f;
 	}
 
 	.buttons-container {
@@ -165,7 +166,7 @@
 	.rust-bar {
 		width: 90%;
 		height: 3rem;
-		background: #DEA584;
+		background: #dea584;
 		border-radius: 0.5rem 0 0 0.5rem;
 		text-align: left;
 		padding-left: 1rem;
@@ -174,7 +175,7 @@
 	.magic-bar {
 		width: 10%;
 		height: 3rem;
-		background: linear-gradient(to bottom right, #6FCBFF, #fff, #FF72F9);
+		background: linear-gradient(to bottom right, #6fcbff, #fff, #ff72f9);
 		border-radius: 0 0.5rem 0.5rem 0;
 	}
 
@@ -196,7 +197,8 @@
 		font-weight: bold;
 	}
 
-	h1,h2  {
+	h1,
+	h2 {
 		// get rid of the default margin
 		margin: 0;
 	}
@@ -205,18 +207,18 @@
 		text-align: center;
 		margin-top: -0.1rem;
 	}
-	
+
 	p {
 		color: rgb(163, 163, 163);
 		font-weight: 100;
 	}
-	
+
 	.blazing-fast-text {
 		font-weight: 800;
-		color: #FFE145;
-		background: linear-gradient(#FFE145, #FF0000);
+		color: #ffe145;
+		background: linear-gradient(#ffe145, #ff0000);
 		background-clip: text;
-		-webkit-linear-gradient: (#FFE145, #FF0000);
+		-webkit-linear-gradient: (#ffe145, #ff0000);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
@@ -232,17 +234,17 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
-    body {
+	body {
 		height: 100%;
 		// background-image: linear-gradient(to bottom ,#0F1314, #0F1314);
 		// background-repeat: no-repeat;
 		// background-size: cover;
 		// background-position: center;
-		background-color: #0F1314;
+		background-color: #0f1314;
 		color: white;
 		font-family: "Be Vietnam Pro", sans-serif;
 	}
-	
+
 	.container {
 		display: flex;
 		flex-direction: column;
