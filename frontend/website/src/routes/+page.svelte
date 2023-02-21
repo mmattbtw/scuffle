@@ -12,6 +12,7 @@
 	<div class="body container">
 		<div class="top-margin">
 			<div class="container header">
+				<span class="blurred-circle blue pos-1"></span>
 				<h1 class="wordmark">Scuffle.tv</h1>
 				<p class="heading-description">
 					We’re building a streaming platform.
@@ -20,6 +21,7 @@
 				</p>
 			</div>
 			<div class="section">
+				<span class="blurred-circle blue pos-2"></span>
 				<h2>For Fun&trade;</h2>
 				<p>
 					Have you ever thought of making your own streaming platform? No?
@@ -57,6 +59,7 @@
 				</p>
 			</div>
 			<div class="section center">
+				<span class="blurred-circle brown pos-3"></span>
 				<h1>So... What makes it community driven?</h1>
 				<p>
 					Open source. Made by a community of people who actually care about their work.
@@ -77,6 +80,8 @@
 				</p>
 			</div>
 			<div class="section">
+				<span class="blurred-circle blue pos-4"></span>
+				<span class="blurred-circle green pos-5"></span>
 				<h2>Alright, you convinced me. Where can i join in on the fun?</h2>
 				<p>You can join our Discord, and check out the source code on GitHub.</p>
 			</div>
@@ -180,6 +185,7 @@
 	}
 
 	.section {
+		position: relative;
 		margin-top: 7rem;
 		display: flex;
 		flex-direction: column;
@@ -203,6 +209,9 @@
 		margin: 0;
 	}
 
+	.header {
+		position: relative;
+	}
 	.heading-description {
 		text-align: center;
 		margin-top: -0.1rem;
@@ -234,7 +243,46 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+	
+	.blurred-circle {
+		position: absolute;
+		width: 30rem;
+		height: 30rem;
+
+		&.blue {
+			background: radial-gradient(50% 50% at 50% 50%, rgba(47, 130, 255, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+		}
+		&.brown {
+			background: radial-gradient(50% 50% at 50% 50%, rgba(255, 180, 136, 0.259) 0%, rgba(0, 0, 0, 0) 100%);
+		}
+		&.green {
+			background: radial-gradient(50% 50% at 50% 50%, rgba(136, 255, 234, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+		}
+		&.pos-1 {
+			top: -18rem;
+			left: 35rem
+		}
+		&.pos-2 {
+			top: -10rem;
+			left: -10rem
+		}
+		&.pos-3 {
+			top: -15rem;
+			left: 25rem
+		}
+		&.pos-4 {
+			top: 2rem;
+			left: -20rem
+		}
+		&.pos-5 {
+			top: 5rem;
+			left: 35rem
+		}
+	}
+
 	body {
+		margin: 0;
+		overflow-x: hidden;
 		height: 100%;
 		// background-image: linear-gradient(to bottom ,#0F1314, #0F1314);
 		// background-repeat: no-repeat;
