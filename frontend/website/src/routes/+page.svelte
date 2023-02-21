@@ -82,7 +82,7 @@
 			<div class="section">
 				<span class="blurred-circle blue pos-4"></span>
 				<span class="blurred-circle green pos-5"></span>
-				<h2>Alright, you convinced me. Where can i join in on the fun?</h2>
+				<h2>Alright, you convinced me. Where can I join in on the fun?</h2>
 				<p>You can join our Discord, and check out the source code on GitHub.</p>
 			</div>
 			<div class="buttons-container center bottom">
